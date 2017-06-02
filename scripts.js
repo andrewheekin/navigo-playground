@@ -3,6 +3,8 @@ function $id(id) {
   return document.getElementById(id);
 }
 
+// asyncrhonously fetch the html template partial from the file directory,
+// then set its contents to the html of the parent element
 function loadHTML(url, id) {
   req = new XMLHttpRequest();
   req.open('GET', url);
